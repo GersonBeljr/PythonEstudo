@@ -12,12 +12,6 @@ livroTest9 = Livro('O segredo','Segredo','1605')
 
 
 livroTest1.emprestar()
-livroTest2.emprestar()
+livroTest1.emprestar()
 
 Livro.verificar_disponibilidade('2018')
-
-def main():
-    pass
-
-if __name__=='__main__':
-    main()

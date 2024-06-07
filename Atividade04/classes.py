@@ -9,7 +9,7 @@ class Livro:
         Livro.biblioteca.append(self)
         
     def __str__(self):
-        return f'Titulo: {self.titulo};\nAutor: {self.autor};\nAno da publicação: {self.ano_publicacao}.'
+        return f'Titulo: {self.titulo} | Autor: {self.autor} | Ano da publicação: {self.ano_publicacao}'
     
     def emprestar(self):
         if self.disponivel:
@@ -24,8 +24,7 @@ class Livro:
         livros_ano = []
         
         for livro in Livro.biblioteca:
-            if livro.ano_publicacao == ano:
-                if livro.disponivel:  
+            if livro.ano_publicacao == ano and livro.disponivel:
                     livros_ano.append(livro.titulo)
         
         print(f'Os livros disponiveis de {ano} são: ')
