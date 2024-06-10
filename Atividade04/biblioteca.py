@@ -14,4 +14,6 @@ livroTest9 = Livro('O segredo','Segredo','1605')
 livroTest1.emprestar()
 livroTest1.emprestar()
 
-Livro.verificar_disponibilidade('2018')
+ano_especifico = '2018'
+Livro.verificar_disponibilidade(ano_especifico)
+Livro.verificar_disponibilidade("1605")

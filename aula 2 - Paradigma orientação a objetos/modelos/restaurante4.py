@@ -1,7 +1,7 @@
 # 1 tornando o projeto aderente ao padrão de mercado
 
 # import da classe Avaliacao
-from modelos.avaliacao import Avaliacao
+from modelos.atividades.avaliacao import Avaliacao
 
 class Restaurante:
     restaurantes=[]
